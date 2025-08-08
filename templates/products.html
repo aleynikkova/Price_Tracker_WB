@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мои товары</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="products-body">
+
+    <div class="sidebar">
+        <div class="sidebar-header">Меню</div>
+        <div class="sidebar-item">
+            <a href="{{url_for('home')}}" class="back-to-home">На главную</a>
+        </div>
+        <div class="sidebar-item">Личный кабинет</div>
+        <div class="sidebar-item">Мои товары</div>
+        <!--<div class="sidebar-item">Сгенерировать мем</div>-->
+        <div class="sidebar-box"></div>
+    </div>
+
+    <div class="search-bar">
+        <div class="search-text">Поиск</div>
+    </div>
+
+    <label for="modal-toggle" class="open-button"><p style="color: #42139F">Добавить товар</p></label>
+
+    <input type="checkbox" id="modal-toggle" hidden>
+
+    <!--модальное окно-->
+    <div class="modal">
+        <label for="modal-toggle" class="overlay"></label>
+        <div class="modal-content">
+            <label for="modal-toggle" class="close-btn">&times;</label>
+
+            <div class="popup-box">
+                <div class="popup-header">Товар</div>
+                <div class="popup-fields">
+                    <form action="{{ url_for('add_product') }}" method="POST" enctype="multipart/form-data">
+                        <input type="text" name="title" placeholder="Название" required class="input-field"><br><br>
+                        <input type="text" name="url" placeholder="Ссылка на товар" required class="input-field"><br><br>
+                        <input type="file" name="image_file" accept="image/*" class="input-field"><br><br>
+                        <button type="submit" class="popup-button">Добавить товар</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!--карточки товаров-->
+     <div class="product-grid">
+        {% for product in products %}
+            <div class="product-card">
+                <img src="{% if product.image_url %}{{ url_for('static', filename=product.image_url) }}{% else %}https://placehold.co/268x300{% endif %}" alt="Product Image">
+                <div class="product-title">
+                    <a href="{{ product.url }}" target="_blank">{{ product.title }}</a>
+                </div>
+                <div class="product-price">{{ product.current_price }} ₽</div>
+                <div class="product-price-target">Текущая цена: {{ product.new_price }} ₽</div>
+                
+                <!--форма для удаления товара-->
+                <form action="{{ url_for('delete_product', product_id=product.id) }}" method="POST" onsubmit="return confirm('Удалить товар?');">
+                    <button type="submit" class="delete-button">Удалить</button>
+                </form>
+            </div>
+        {% endfor %}
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="register-container">
+        <div class="register-box">
+            <form action="{{ url_for('register') }}" method="POST" class="register-form">
+                
+                <h1 class="register-title">Регистрация</h1>
+
+                <div class="input-group">
+                    <input type="text" name="username" placeholder="Имя" required class="input-field">
+                    <input type="text" name="phone" placeholder="Телефон" required class="input-field">
+                    <input type="text" name="telegram" placeholder="Телеграмм" required class="input-field">
+                    <input type="password" name="password" placeholder="Пароль" required class="input-field">
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" class="register-button">Отправить</button>
+
+                    <div class="agreement">
+                        <div class="checkbox"></div>
+                        <span class="agreement-text">Нажимая на кнопку, Вы соглашаетесь на обработку персональных данных</span>
+                    </div>
+
+                    <div class="login-link">
+                        <span>Уже есть аккаунт?</span>
+                        <a href="{{ url_for('login') }}" class="login-link-text">Войти</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

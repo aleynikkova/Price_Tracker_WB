@@ -1,0 +1,82 @@
+[
+    {
+        "title": "бомба",
+        "url": "https://www.wildberries.ru/catalog/76091735/detail.aspx?targetUrl=SN",
+        "current_price": 3748.0,
+        "new_price": 3960.0,
+        "target_price": 3373.2,
+        "image_url": "uploads/матрена.png"
+    },
+    {
+        "title": "тушка",
+        "url": "https://www.wildberries.ru/catalog/265791601/detail.aspx?targetUrl=SN",
+        "current_price": 7050.0,
+        "new_price": 7540.0,
+        "target_price": 6345.0,
+        "image_url": null
+    },
+    {
+        "title": "а",
+        "url": "https://www.wildberries.ru/catalog/76091735/detail.aspx?targetUrl=SN",
+        "current_price": 3801.0,
+        "new_price": 3960.0,
+        "target_price": 3420.9,
+        "image_url": null
+    },
+    {
+        "title": "в",
+        "url": "https://www.wildberries.ru/catalog/76091735/detail.aspx?targetUrl=SN",
+        "current_price": 3801.0,
+        "new_price": 3960.0,
+        "target_price": 3420.9,
+        "image_url": null
+    },
+    {
+        "title": "в",
+        "url": "https://www.wildberries.ru/catalog/307994484/detail.aspx?targetUrl=SN",
+        "current_price": 546.0,
+        "new_price": 561.0,
+        "target_price": 491.4,
+        "image_url": null
+    },
+    {
+        "title": "таттата",
+        "url": "https://www.wildberries.ru/catalog/265791601/detail.aspx?targetUrl=SN",
+        "current_price": 7050.0,
+        "new_price": 7540.0,
+        "target_price": 6345.0,
+        "image_url": null
+    },
+    {
+        "title": "блабла",
+        "url": "https://www.wildberries.ru/catalog/76091735/detail.aspx?targetUrl=SN",
+        "current_price": 3801.0,
+        "new_price": 3960.0,
+        "target_price": 3420.9,
+        "image_url": "uploads/Снимок экрана 2024-12-04 в 15.10.05.png"
+    },
+    {
+        "title": "траливали",
+        "url": "https://www.wildberries.ru/catalog/265791601/detail.aspx?targetUrl=SN",
+        "current_price": 7050.0,
+        "new_price": 7540.0,
+        "target_price": 6345.0,
+        "image_url": "uploads/premium_photo-1664391726094-3a1c3f9adb3a.avif"
+    },
+    {
+        "title": "хуй",
+        "url": "https://www.wildberries.ru/catalog/307994484/detail.aspx?targetUrl=SN",
+        "current_price": 546.0,
+        "new_price": 561.0,
+        "target_price": 491.4,
+        "image_url": "uploads/Frame 8.jpg"
+    },
+    {
+        "title": "бубу",
+        "url": "https://www.wildberries.ru/catalog/76091735/detail.aspx?targetUrl=SN",
+        "current_price": 3643.0,
+        "new_price": 3960.0,
+        "target_price": 3278.7,
+        "image_url": "uploads/Frame 22.svg"
+    }
+]
